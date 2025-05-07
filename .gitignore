@@ -8,3 +8,7 @@ scripts/cray
 **/__pycache__/
 .env
 .idea
+
+# CM additions
+.gitignore
+.venv
