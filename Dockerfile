@@ -138,7 +138,7 @@ RUN apt-get update -y  \
     && rm -rf /var/lib/apt/lists/*
 
 # Setup python path
-ENV PYTHONPATH="${PYTHONPATH}:${INSTALL_ROOT}/infra"
+ENV PYTHONPATH="${INSTALL_ROOT}/infra"
 ENV PYTHONPATH="${PYTHONPATH}:${INSTALL_ROOT}/sdk"
 ENV PYTHONPATH="${PYTHONPATH}:${INSTALL_ROOT}/ml"
 ENV PYTHONPATH="${PYTHONPATH}:${INSTALL_ROOT}/test"

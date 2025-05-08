@@ -1,8 +1,15 @@
 
 packaging~=25.0
+
 -r requirements.txt
+-r infra/requirements-vllm-build.txt
+-r test/requirements-pytest.txt
+
 --editable sdk
+
 torch~=2.7.0
 setuptools-scm~=8.3.1
 pydantic~=2.11.4
 pydantic-settings~=2.9.1
+
+uvicorn~=0.34.2
