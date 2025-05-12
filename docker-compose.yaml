@@ -1,5 +1,33 @@
 services:
-
+    # bash:
+    #     command: /bin/bash
+    #     build:
+    #         context: .
+    #         dockerfile: Dockerfile
+    #         args:
+    #             - BASE_NAME=${BASE_NAME}
+    #             - VLLM_TARGET_DEVICE=${VLLM_TARGET_DEVICE}
+    #     ports:
+    #         - "8000:8000"
+    #         - "8001:8001"
+    #     volumes:
+    #         - type: bind
+    #           source: ./models
+    #           target: /root/.cache/huggingface
+    #         - type: bind
+    #           source: ./infra/cray_infra
+    #           target: /app/cray/infra/cray_infra
+    #         - type: bind
+    #           source: ./scripts
+    #           target: /app/cray/scripts
+    #         - type: bind
+    #           source: ./ml
+    #           target: /app/cray/ml
+    #         - type: bind
+    #           source: ./test
+    #           target: /app/cray/test
+    #     networks:
+    #         - cray-network      
     cray: &cray
         command: /app/cray/scripts/start_one_server.sh
         build:
