@@ -1,6 +1,6 @@
 **/*.swp
 **/*.so
-models/*
+models
 infra/slurm_configs/slurm.conf
 scripts/cray
 
@@ -10,6 +10,5 @@ scripts/cray
 .idea
 
 # CM additions
-.gitignore
 .venv
 var

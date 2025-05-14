@@ -41,7 +41,7 @@ services:
             - "8001:8001"
         volumes:
             - type: bind
-              source: ./models
+              source: ./var
               target: /root/.cache/huggingface
             - type: bind
               source: ./infra/cray_infra
